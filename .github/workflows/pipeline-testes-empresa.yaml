@@ -6,5 +6,4 @@ on:
 jobs:
   call-external-workflow:
     uses: DaviMacielCavalcante/empresas-pipelines/.github/workflows/template-teste.yaml@main
-    with:
-      app: "teste-1"
+    
