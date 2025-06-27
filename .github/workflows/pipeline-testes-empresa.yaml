@@ -4,6 +4,11 @@ on:
   workflow_dispatch:
 
 jobs:
-  call-external-workflow:
+  call-external-workflow-tests:
     uses: DaviMacielCavalcante/empresa-pipelines/.github/workflows/template-teste.yaml@main
-    
+
+  call-external-workflow-builder:
+    uses: DaviMacielCavalcante/empresa-pipelines/.github/workflows/template-build.yaml@main
+    with:
+      image-tag: 'latest'
+      image-name: 'desafio'
